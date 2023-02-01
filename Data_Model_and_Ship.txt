@@ -1,0 +1,16 @@
+Data Ship Model
+scale 1   21.667
+Length on water line  [m] 
+Lwl 260 12
+length between perpendicualars  [m] 
+Lpp 260 120.92
+Beam [m]
+B 42 1.938
+Draft [m]
+T 10.64 0.4911
+Displacement (mold) [m^3]
+Delta 86266 8.481
+Block coefficient 
+Cb 0.7425 0.7425
+Wetted surface  [m^2]
+S 12898.9 27.476
