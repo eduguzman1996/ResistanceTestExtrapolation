@@ -1,0 +1,192 @@
+
+#Values of kinematic viscosity for fresh and salt water adopted by ITTC
+table_10 = [
+    ['[Temperature C]','[nuE-6 (fresh water) m^2/sec]','[nuE-6 (fresh salt) m^2/sec]'],
+    [0,1.78667,1.82844],
+    [1,1.72701,1.76915],
+    [2,1.6704,1.71306],
+    [3,1.61655,1.65988],
+    [4,1.56557,1.6094],
+    [5,1.51698,1.56142],
+    [6,1.4707,1.51584],
+    [7,1.42667,1.47242],
+    [8,1.38471,1.43102],
+    [9,1.34463,1.39152],
+    [10,1.30641,1.35383],
+    [11,1.26988,1.31773],
+    [12,1.23495,1.28324],
+    [13,1.20159,1.25028],
+    [14,1.16964,1.21862],
+    [15,1.13902,1.18831],
+    [16,1.10966,1.15916],
+    [17,1.08155,1.13125],
+    [18,1.05456,1.10438],
+    [19,1.02865,1.07854],
+    [20,1.00374,1.05372],
+    [21,0.97984,1.02981],
+    [22,0.95682,1.00678],
+    [23,0.93471,0.98457],
+    [24,0.9134,0.96315],
+    [25,0.89292,0.94252],
+    [26,0.87313,0.92255],
+    [27,0.85409,0.90331],
+    [28,0.83572,0.8847],
+    [29,0.81798,0.86671],
+    [30,0.80091,0.84931]
+]
+#save table 10 as Kinematic_viscosity.txt file
+fp = open('Kinematic_viscosity.txt', 'w')
+for row in table_10:
+    fp.write('\t'.join([str(col) for col in row]) + '\n')
+fp.close()
+
+#print(table_10)
+#Values of mass density for fresh and salt water adopted by ITTC
+table_11 = [
+    ['[Temperature C]','[density(fresh water) kg/m^3]','[density(salt water) kg/m^3]'],
+    [0,999.8,1028],
+    [1,999.8,1027.9],
+    [2,999.9,1027.8],
+    [3,999.9,1027.8],
+    [4,999.9,1027.7],
+    [5,999.9,1027.6],
+    [6,999.9,1027.4],
+    [7,999.8,1027.3],
+    [8,999.8,1027.1],
+    [9,999.7,1027.0],
+    [10,999.6,1026.9],
+    [11,999.5,1026.7],
+    [12,999.4,1026.6],
+    [13,999.3,1026.3],
+    [14,999.1,1026.1],
+    [15,999.0,1025.9],
+    [16,998.9,1025.7],
+    [17,998.7,1025.4],
+    [18,998.5,1025.2],
+    [19,998.3,1025.0],
+    [20,998.1,1024.7],
+    [21,997.9,1024.4],
+    [22,997.7,1024.1],
+    [23,997.4,1023.8],
+    [24,997.2,1023.5],
+    [25,996.9,1023.2],
+    [26,996.7,1022.9],
+    [27,996.4,1022.6],
+    [28,996.2,1022.3],
+    [29,995.9,1022.0],
+    [30,995.6,1021.7]
+]
+
+#Sve table 11 as .txt file to be used later
+#create the .txt file
+fp = open('mass_density.txt', 'w')
+for row in table_11:
+    fp.write('\t'.join([str(col) for col in row]) + '\n')
+fp.close()
+
+#print(table_11)
+#Values of Cfo Given by ITTC and ATTC
+table_12 = [
+    ['[Rn]','[CtE3 (ITTC)]', '[CfE3 (ATTC)]'],
+    [100000,8.333,7.179],
+    [200000,6.882,6.137],
+    [300000,6.203,5.623],
+    [400000,5.78,5.294],
+    [500000,5.482,5.057],
+    [600000,5.254,4.875],
+    [700000,5.073,4.727],
+    [800000,4.923,4.605],
+    [900000,4.797,4.500],
+    [1000000,4.688,4.409],
+    [2000000,4.054,3.872],
+    [3000000,3.741,3.6],
+    [4000000,3.541,3.423],
+    [5000000,3.397,3.294],
+    [6000000,3.285,3.193],
+    [7000000,3.195,3.112],
+    [8000000,3.120,3.044],
+    [9000000,3.056,2.985],
+    [10000000,3.000,2.934],
+    [20000000,2.669,2.628],
+    [30000000,2.500,2.470],
+    [40000000,2.39,2.365],
+    [50000000,2.309,2.289],
+    [60000000,2.246,2.229],
+    [70000000,2.195,2.18],
+    [80000000,2.162,2.138],
+    [90000000,2.115,2.103],
+    [100000000,2.083,2.072],
+    [200000000,1.889,1.884],
+    [300000000,1.788,1.784],
+    [400000000,1.721,1.719],
+    [500000000,1.671,1.670],
+    [600000000,1.632,1.632],
+    [700000000,1.601,1.600],
+    [800000000,1.574,1.574],
+    [900000000,1.551,1.551],
+    [1000000000,1.531,1.531],
+    [2000000000,1.407,1.408],
+    [3000000000,1.342,1.342],
+    [4000000000,1.298,1.299],
+    [5000000000,1.265,1.266],
+    [6000000000,1.240,1.240],
+    [7000000000,1.219,1.219],
+    [8000000000,1.201,1.201],
+    [9000000000,1.185,1.186],
+    [10000000000,1.172,1.172]
+]
+
+#prepare the table 12, transform column one to scientific notation 
+n = len(table_12)
+for  j in range(1, n):
+    table_12[j][0] = "{:.2e}".format(table_12[j][0])
+    
+
+
+#save table 12 as Froud_number.txt file
+fp = open('Friction_resistance.txt', 'w')
+for row in table_12:
+    fp.write('\t'.join([str(col) for col in row]) + '\n')
+fp.close()
+
+
+
+fp = open("Data_Model_and_Ship.txt")    # open file for reading
+nextline = fp.readline()                # read the first line
+data = nextline.split('\t')
+
+with open('Data_Model_and_Ship.txt', 'r') as file:
+    text_data = file.read()
+particuliarities = text_data.split('\n') #read the dimensions of the model and ship
+
+
+lwl = particuliarities[1].split()    #read the length on water line
+lwl_ship = float(lwl[1])             #Transform data from text to number
+lwl_model = float(lwl[2])
+
+lpp = particuliarities[3].split()
+lpp_ship = float(lpp[1])
+lpp_model = float(lpp[2])
+
+B = particuliarities[5].split()
+B_ship = float(B[1])
+B_model = float(B[2])
+
+T = particuliarities[7].split()
+T_ship = float(T[1])
+T_model = float(T[2])
+
+Delta = particuliarities[9].split()
+Delta_ship = float(Delta[1])
+Delta_model = float(Delta[2])
+
+Cb = particuliarities[11].split()
+Cb_ship = float(Cb[1])
+Cb_model = float(Cb[2])
+
+S = particuliarities[13].split()
+S_ship = float(S[1])
+S_model = float(S[2])
+
+
+
